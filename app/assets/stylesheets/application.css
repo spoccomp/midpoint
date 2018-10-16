@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+.btns {
+  background-color: #F49A4B;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border-color: rgb(51, 50, 50);
+  height: 2.4em;
+}
+
+.devise-links {
+  color: rgb(51, 50, 50);
+
+}
+
+.devise-links:hover {
+  text-decoration: none;
+  color: #F49A4B;
+}
