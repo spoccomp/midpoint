@@ -1,0 +1,7 @@
+<h3 class="text-center">Email</h3>
+
+<%# @user is not being used at the moment %>
+<%= bootstrap_form_with(model: @user) do |f| %>
+  <%= f.email_field :email %>
+  <%= f.submit "Send" %>
+<% end %>
