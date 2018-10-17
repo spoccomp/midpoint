@@ -1,3 +1,4 @@
+ <%= render 'shared/nav' %>
 
 <div> </div>
 
@@ -9,10 +10,10 @@
   <div class="container">
     <div class="row">
         <div class="col">
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Adress">
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email   ">
         </div>
         <div class="col">
-            <button type="submit" class="btn btn-primary">Email</button>
+            <%= link_to 'Email', new_email_model_path, class: "btn btn-primary " %>
         </div>
     </div>
    </div>
