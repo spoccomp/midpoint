@@ -16,17 +16,29 @@
 
 
 .splash-head {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Bai Jamjuree', sans-serif;
   font-size: 3em;
+  padding-top: 0.4em;
 }
 
 .btns {
-  background-color: #F49A4B;
+  background-color: #F38A2D;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   border-color: rgb(51, 50, 50);
   height: 2.4em;
+}
+
+.btns-cancel {
+  background-color: rgb(243, 102, 102);
+  border-radius: 5px;
+  border-color: rgb(51, 50, 50);
+  height: 2.3em;
+}
+
+.name {
+  color: #F38A2D;
 }
 
 .devise-links {
@@ -36,13 +48,13 @@
 
 .devise-links:hover {
   text-decoration: none;
-  color: #F49A4B;
+  color: #F38A2D;
 }
 
 .splash {
   background-color: #FFFFFC;
   font-family: 'Roboto', sans-serif;
-
+  margin: .5em;
   text-align: center;
   font-size: 1.2em;
 }
