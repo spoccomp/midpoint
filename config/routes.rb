@@ -11,8 +11,7 @@ Rails.application.routes.draw do
   }
 
   root to: 'static#splashpage'
- 
-
+  # get 'static/splashpage', to: 'static#splashpage'
   resources :email_models
   resources :route_maps
 
