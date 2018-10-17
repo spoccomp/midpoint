@@ -14,12 +14,8 @@
  *= require_self
  */
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2em;
-}
 
-h2 {
+.splash-head {
   font-family: 'Oswald', sans-serif;
   font-size: 3em;
 }
@@ -45,6 +41,8 @@ h2 {
 
 .splash {
   background-color: #FFFFFC;
+  font-family: 'Roboto', sans-serif;
+
   text-align: center;
   font-size: 1.2em;
 }
