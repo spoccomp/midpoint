@@ -14,6 +14,12 @@
  *= require_self
  */
 
+
+.splash-head {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3em;
+}
+
 .btns {
   background-color: #F49A4B;
   -webkit-border-radius: 5px;
@@ -31,4 +37,12 @@
 .devise-links:hover {
   text-decoration: none;
   color: #F49A4B;
+}
+
+.splash {
+  background-color: #FFFFFC;
+  font-family: 'Roboto', sans-serif;
+
+  text-align: center;
+  font-size: 1.2em;
 }
