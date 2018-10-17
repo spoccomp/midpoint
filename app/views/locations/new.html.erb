@@ -1,4 +1,4 @@
-
+ <%= render 'shared/nav' %>
 
 <div class="container">
 <form>
@@ -26,37 +26,32 @@
   </div>
 
   <div class="container">
-  <div class="row top">
-    <div class="col">
-      <button type="button" class="btn btn-primary">Dining</button>
+    <div class="row top">
+      <div class="col">
+        <button type="button" class="btn btn-primary">Dining</button>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-primary">Stores</button>
+      </div>
     </div>
-    <div class="col">
-      <button type="button" class="btn btn-primary">Stores</button>
+  
+    <div class="row top">
+      <div class="col">
+        <button type="button" class="btn btn-primary">Attraction</button>
+      </div> 
+      <div class="col"> 
+        <button type="button" class="btn btn-primary">All</button>
+      </div>
     </div>
-  </div>
   
-  
-  
-  <div class="row top">
-    <div class="col">
-      <button type="button" class="btn btn-primary">Attraction</button>
-    </div> 
-    <div class="col"> 
-      <button type="button" class="btn btn-primary">All</button>
-    </div>
-  </div>
-  
-  
-  
-  <div class="row top">
-    <div class="col">
-      <div class= "smallerbutton"><button type="button" class="btn btn-primary ">Cancel</button></div>
-    </div>
-    <div class="col">
-      <div class= "smallerbutton"><button type="submit" class="btn btn-primary ">Go</button></div>
+    <div class="row top">
+      <div class="col">
+        <div class= "smallerbutton"><button type="button" class="btn btn-primary ">Cancel</button></div>
+      </div>
+      <div class="col">
+        <%= link_to 'Go', route_maps_path, class: "btn btn-primary " %>
+      </div>
     </div>
   </div>
-</div>
-</div>
 </form>
 </div>
