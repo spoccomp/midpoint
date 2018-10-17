@@ -16,8 +16,9 @@
 
 
 .splash-head {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Bai Jamjuree', sans-serif;
   font-size: 3em;
+  padding-top: 0.4em;
 }
 
 .btns {
@@ -27,6 +28,17 @@
   border-radius: 5px;
   border-color: rgb(51, 50, 50);
   height: 2.4em;
+}
+
+.btns-cancel {
+  background-color: rgb(243, 102, 102);
+  border-radius: 5px;
+  border-color: rgb(51, 50, 50);
+  height: 2.3em;
+}
+
+.name {
+  color: #F38A2D;
 }
 
 .devise-links {
@@ -42,7 +54,7 @@
 .splash {
   background-color: #FFFFFC;
   font-family: 'Roboto', sans-serif;
-
+  margin: .5em;
   text-align: center;
   font-size: 1.2em;
 }
