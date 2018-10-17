@@ -1,0 +1,2 @@
+class RouteMapsController < ApplicationController
+end
