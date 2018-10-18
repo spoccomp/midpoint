@@ -9,7 +9,7 @@ class CreateProfiles < ActiveRecord::Migration[5.2]
       t.string :city
       t.string :state
       t.string :zipcode
-
+      t.references :user
       t.timestamps
     end
   end

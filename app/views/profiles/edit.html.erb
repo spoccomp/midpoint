@@ -2,3 +2,15 @@
 
 <h1>Profiles#edit</h1>
 <p>Find me in app/views/profiles/edit.html.erb</p>
+
+        <%= bootstrap_form_with(model: @profile) do |form| %>
+          <%= form.text_field :first_name, label: "First Name:" %>
+          <%= form.text_field :last_name, label: "Last Name:" %>
+          <%= form.text_field :phone, label: "Phone:" %>
+          <%= form.text_field :address1, label: "Address 1:" %>
+          <%= form.text_field :address2, label: "Address 2:" %>
+          <%= form.text_field :city, label: "City:" %>
+          <%= form.text_field :state, label: "State:" %>
+          <%= form.text_field :zipcode, label: "Zipcode:" %>
+          <%= form.submit class: "btn btn-primary", value: "Update"%>
+        <% end %>

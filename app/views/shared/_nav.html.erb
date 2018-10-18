@@ -11,7 +11,11 @@
   <% if user_signed_in? %>
 
     <%= link_to 'Edit Account', edit_user_registration_path, :class => 'navbar-link' %> 
-    <%= link_to 'Profile', profiles_path, :class => 'navbar-link' %> 
+    <% if (@profile == true) %>
+      <%= link_to 'Add Profile', new_profile_path	, :class => 'navbar-link' %> 
+    <% else %>
+        <%= link_to 'Edit Profile', edit_profile_path	, :class => 'navbar-link' %> 
+    <% end %>
     <%= link_to 'Location', locations_new_path, :class => 'navbar-link' %> 
     <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
   <% end %>
