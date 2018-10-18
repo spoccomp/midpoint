@@ -13,7 +13,7 @@ class ProfilesController < ApplicationController
 
   def update
     profile = Profile.find(params[:id])
-    profile.update(
+    @profile.update(
       first_name: params[:profile][:first_name],
       last_name: params[:profile][:last_name],
       phone: params[:profile][:phone],
@@ -28,7 +28,7 @@ class ProfilesController < ApplicationController
   end
 
   def create
-    profile = Profile.create(
+    @profile = Profile.create(
       first_name: params[:profile][:first_name],
       last_name: params[:profile][:last_name],
       phone: params[:profile][:phone],
