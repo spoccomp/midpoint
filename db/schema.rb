@@ -24,8 +24,10 @@ ActiveRecord::Schema.define(version: 2018_10_16_201402) do
     t.string "city"
     t.string "state"
     t.string "zipcode"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_profiles_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
