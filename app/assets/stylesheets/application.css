@@ -14,11 +14,42 @@
  *= require_self
  */
 
+.jumbotron {
+  height: 100% !important;
+}
+
+.splash {
+  margin: .5em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: black;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.splash:hover {
+  text-decoration: none;
+  color: black;
+}
 
 .splash-head {
   font-family: 'Bai Jamjuree', sans-serif;
   font-size: 3em;
   padding-top: 0.4em;
+}
+
+.splash-pitch {
+  font-size: 1.5em;
+  color: #F38A2D;
+}
+
+.photo {
+  height: 65%;
+  width: 65%;
 }
 
 .btns {
@@ -49,12 +80,4 @@
 .devise-links:hover {
   text-decoration: none;
   color: #F38A2D;
-}
-
-.splash {
-  background-color: #FFFFFC;
-  font-family: 'Roboto', sans-serif;
-  margin: .5em;
-  text-align: center;
-  font-size: 1.2em;
 }
