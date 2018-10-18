@@ -24,7 +24,7 @@ class ProfilesController < ApplicationController
       zipcode: params[:profile][:zipcode]
     )
 
-    redirect_to profile_path(profile)
+    redirect_to locations_new_path
   end
 
   def create
@@ -40,7 +40,7 @@ class ProfilesController < ApplicationController
       user_id: current_user.id
     )
 
-    redirect_to locations_new_path
+    redirect_to profiles_path
   end
 
   def new
