@@ -40,7 +40,7 @@ class ProfilesController < ApplicationController
       user_id: current_user.id
     )
 
-    redirect_to profiles_path
+    redirect_to locations_new_path
   end
 
   def new
