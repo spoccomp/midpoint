@@ -28,28 +28,28 @@
   <div class="container">
     <div class="row top">
       <div class="col">
-        <button type="button" class="btn btn-primary">Dining</button>
+        <button type="button" class="btn btns">Dining</button>
       </div>
       <div class="col">
-        <button type="button" class="btn btn-primary">Stores</button>
+        <button type="button" class="btn btns">Stores</button>
       </div>
     </div>
   
     <div class="row top">
       <div class="col">
-        <button type="button" class="btn btn-primary">Attraction</button>
+        <button type="button" class="btn btns">Attraction</button>
       </div> 
       <div class="col"> 
-        <button type="button" class="btn btn-primary">All</button>
+        <button type="button" class="btn btns">All</button>
       </div>
     </div>
   
     <div class="row top">
       <div class="col">
-        <div class= "smallerbutton"><button type="button" class="btn btn-primary ">Cancel</button></div>
+        <div class= "smallerbutton"><button type="button" class="btn btns-cancel">Cancel</button></div>
       </div>
       <div class="col">
-        <%= link_to 'Go', route_maps_path, class: "btn btn-primary " %>
+        <div class= "smallerbutton"><button type="button" class="btn btns"><strong><%= link_to 'Go', route_maps_path %></strong></button></div>
       </div>
     </div>
   </div>

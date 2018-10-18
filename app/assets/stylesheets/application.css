@@ -58,14 +58,16 @@ a {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border-color: rgb(51, 50, 50);
-  height: 2.4em;
+  height: 2.2em;
+  color: rgb(51, 50, 50);
 }
 
 .btns-cancel {
-  background-color: rgb(243, 102, 102);
+  background-color: rgb(116, 113, 113);
   border-radius: 5px;
   border-color: rgb(51, 50, 50);
   height: 2.3em;
+  color: #F38A2D;
 }
 
 .name {
