@@ -1,12 +1,64 @@
   
+  
   <%= bootstrap_form_with(model: @profile) do |form| %>
-    <%= form.text_field :first_name, label: "First Name:" %>
-    <%= form.text_field :last_name, label: "Last Name:" %>
-    <%= form.text_field :phone, label: "Phone:" %>
-    <%= form.text_field :address1, label: "Address 1:" %>
-    <%= form.text_field :address2, label: "Address 2:" %>
-    <%= form.text_field :city, label: "City:" %>
-    <%= form.text_field :state, label: "State:" %>
+
+  <div class="form-group row">
+    <label class="col-sm-1 offset-md-3 col-form-label">First Name</label>
+    <div class="col-sm-5">
+      <%= form.text_field :first_name, hide_label: "true", placeholder: "First Name:" %>   
+    </div> 
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-1 offset-md-3 col-form-label">Last Name</label>
+    <div class="col-sm-5">
+      <%= form.text_field :last_name, hide_label: "true", placeholder: "Last Name:" %>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-1 offset-md-3 col-form-label">Phone</label>
+    <div class="col-sm-5">
+      <%= form.text_field :phone, hide_label: "true", placeholder: "Phone Number:" %>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-1 offset-md-3 col-form-label">Address 1</label>
+    <div class="col-sm-5">
+      <%= form.text_field :address1, hide_label: "true", placeholder: "Address 1:" %>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-1 offset-md-3 col-form-label">Address 2</label>
+    <div class="col-sm-5">
+      <%= form.text_field :address2, hide_label: "true", placeholder: "Address 2:" %>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-1 offset-md-3 col-form-label">City</label>
+    <div class="col-sm-5">
+      <%= form.text_field :city, hide_label: "true", placeholder: "City:" %>
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-1 offset-md-3 col-form-label">State</label>
+    <div class="col-sm-5">
+      <%= form.text_field :state, hide_label: "true", placeholder: "State:" %>
+    </div>
+  </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-1 offset-md-3 col-form-label">Zipcode</label>
+    <div class="col-sm-5">
+      <%= form.text_field :zipcode, hide_label: "true", placeholder: "Zipcode:" %>
+    </div>
+  </div>
+  <button type="submit" class="col-sm-2 offset-md-3 btns"> Save 
+  </button>
+<% end %>
+
+
+<div class="col-sm-6">
+  <%= bootstrap_form_with(model: @profile) do |form| %>
+  
     <%= form.text_field :zipcode, label: "Zipcode:" %>
     <%= form.submit class: "btn btns", value: "Save" %>
   <% end %>

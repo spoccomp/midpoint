@@ -14,8 +14,14 @@
  *= require_self
  */
 
+
+
 .jumbotron {
   height: 100% !important;
+}
+
+#container-size {
+  height: 100%;
 }
 
 .splash {
@@ -82,4 +88,8 @@ a {
 .devise-links:hover {
   text-decoration: none;
   color: #F38A2D;
+}
+
+.hidden {
+  display: none;
 }
