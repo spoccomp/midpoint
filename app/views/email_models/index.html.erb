@@ -5,5 +5,5 @@
 <%# @user is not being used at the moment %>
 <%= bootstrap_form_with(model: @user) do |f| %>
   <%= f.email_field :email %>
-  <%= f.submit "Send" %>
+  <%= f.submit "Send", class: "col-md-6 offset-md-3" %>
 <% end %>
