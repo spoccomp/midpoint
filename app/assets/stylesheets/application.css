@@ -17,7 +17,7 @@
 body {
   font-family: 'Roboto', sans-serif !important;
   font-size: 1.3em;
-  background-color: rgb(148, 146, 146);
+  background-color: #d2d2d2;
 }
 
 .jumbotron {
@@ -70,7 +70,7 @@ a {
 
 .nav-bar {
   background-color: #F38A2D;
-  padding-bottom: 2em;
+  padding-bottom: 1.3em;
   color: black;
 }
 
@@ -81,8 +81,12 @@ a {
 }
 
 .nav-links:hover {
-  color: black;
-  font-size: 1em;
+  color: rgb(51, 50, 50);
+  text-decoration: none;
+}
+
+.hamburger {
+  background-color: black;
 }
 
 .btns {
@@ -103,8 +107,13 @@ a {
   color: #F38A2D;
 }
 
+.btns-cancel:hover {
+  background-color: rgb(158, 155, 155);
+  color: rgb(51, 50, 50);
+}
+
 .btns:hover {
-  background-color: rgb(190, 110, 40);
+  background-color: rgb(248, 119, 7);
 }
 
 .name {
@@ -131,5 +140,8 @@ a {
 
 form {
   padding-top: 3em;
+}
 
+.locations {
+  padding-bottom: 3em;
 }
