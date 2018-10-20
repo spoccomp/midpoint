@@ -15,8 +15,9 @@
  */
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.3em;
+  background-color: #d2d2d2;
 }
 
 .jumbotron {
@@ -58,23 +59,34 @@ a {
 }
 
 .photo {
-  height: 65%;
-  width: 65%;
+  height: 2.3em;
+  width: 1.9em;
+}
+
+.photo-splash {
+  height: 75%;
+  width: 55%;
 }
 
 .nav-bar {
   background-color: #F38A2D;
-  padding-bottom: 2em;
+  padding-bottom: 1.3em;
+  color: black;
 }
 
 .nav-links {
   color: black;
-  font-size: 1em;
+  font-size: 1.3em;
+  padding-left: 1em;
 }
 
 .nav-links:hover {
-  color: black;
-  font-size: 1em;
+  color: rgb(51, 50, 50);
+  text-decoration: none;
+}
+
+.hamburger {
+  background-color: black;
 }
 
 .btns {
@@ -93,6 +105,15 @@ a {
   border-color: rgb(51, 50, 50);
   height: 2.3em;
   color: #F38A2D;
+}
+
+.btns-cancel:hover {
+  background-color: rgb(158, 155, 155);
+  color: rgb(51, 50, 50);
+}
+
+.btns:hover {
+  background-color: rgb(248, 119, 7);
 }
 
 .name {
@@ -115,4 +136,12 @@ a {
 
 .hidden {
   display: none;
+}
+
+form {
+  padding-top: 3em;
+}
+
+.locations {
+  padding-bottom: 3em;
 }
