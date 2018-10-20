@@ -49,8 +49,8 @@ a {
 
 .splash-head {
   font-family: 'Bai Jamjuree', sans-serif;
-  font-size: 3em;
-  padding-top: 0.4em;
+  font-size: 4em;
+  padding-top: 1.4em;
 }
 
 .splash-pitch {
@@ -64,13 +64,13 @@ a {
 }
 
 .photo-splash {
-  height: 75%;
-  width: 55%;
+  height: 85%;
+  width: 85%;
 }
 
 .nav-bar {
   background-color: #F38A2D;
-  padding-bottom: 1.3em;
+  padding-bottom: 2em;
   color: black;
 }
 
@@ -118,6 +118,7 @@ a {
 
 .name {
   color: #F38A2D;
+
 }
 
 .devise-links {
