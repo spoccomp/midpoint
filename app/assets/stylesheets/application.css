@@ -14,7 +14,10 @@
  *= require_self
  */
 
-
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
 
 .jumbotron {
   height: 100% !important;
@@ -35,6 +38,7 @@
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .splash:hover {
@@ -56,6 +60,21 @@ a {
 .photo {
   height: 65%;
   width: 65%;
+}
+
+.nav-bar {
+  background-color: #F38A2D;
+  padding-bottom: 2em;
+}
+
+.nav-links {
+  color: black;
+  font-size: 1em;
+}
+
+.nav-links:hover {
+  color: black;
+  font-size: 1em;
 }
 
 .btns {
@@ -82,7 +101,11 @@ a {
 
 .devise-links {
   color: rgb(51, 50, 50);
+}
 
+.devise-head {
+  color: rgb(51, 50, 50);
+  text-align: center;
 }
 
 .devise-links:hover {
