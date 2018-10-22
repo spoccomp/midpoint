@@ -153,8 +153,8 @@
 
       ClickEventHandler.prototype.handleClick = function(event) {
         POI = event.latLng
-        //console.log(POI.lat(), POI.lng());
-        
+        // console.log(POI.lat(), POI.lng());
+        console.log(`${event.latlng}`);
         
         console.log('You clicked on: ' + event.latLng);
         // If the event has a placeId, use it.
