@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  # get 'favorites/index'
+  # get 'favorites/show'
+  # get 'favorites/create'
+  # get 'favorites/new'
+  # get 'favorites/destroy'
   get 'midpoints/new'
   get 'locations/new'
   # get 'profiles/index'
@@ -17,6 +22,8 @@ Rails.application.routes.draw do
 
   resources :locations
   resources :midpoints
+  resources :favorites
+
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
