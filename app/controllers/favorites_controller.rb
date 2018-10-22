@@ -13,8 +13,10 @@ class FavoritesController < ApplicationController
       address: params[:student][:address],
       lat: params[:student][:lat],
       long: params[:student][:long],
+
       type: params[:favorite][:type],
       user_id: user.id
+
     )
 
   end
@@ -24,8 +26,10 @@ class FavoritesController < ApplicationController
   end
 
   def destroy
+
     favorite = @favorite
     favorite.destroy
+
   end
 
   private
