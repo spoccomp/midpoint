@@ -1,2 +1,42 @@
-<h1>Favorites#index</h1>
-<p>Find me in app/views/favorites/index.html.erb</p>
+
+<h1 class="devise-head">My Favorites</h1>
+
+<div class="container">
+
+  <table class="table table-hover table-striped">
+    <thead>
+      <tr class="tb-header">
+        <th>
+          #
+        </th>
+        <th>
+          Location
+        </th>
+        <th>
+          Address
+        </th>
+        <th>
+          Delete
+        </th>
+      </tr>
+    <thead>
+
+    <% @favorites.each do |f| %>
+    <tr id="favorite <%= f.id %>" >
+      <td>
+         <%= f.id %>
+      </td>
+      <td>
+        <%= f.name %>
+      </td>
+      <td>
+        <%= f.address %>
+      </td>
+      <td>
+        <span><%= link_to '', favorite_path(id: f.id), method: :delete, class: 'glyphicon glyphicon-trash index-icons', data: { confirm: 'Are you sure?' } %></span>
+      </td>
+    </tr>
+    <% end %>
+  </table>
+</div>
+
