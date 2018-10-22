@@ -16,14 +16,12 @@ ActiveRecord::Schema.define(version: 2018_10_22_175700) do
   enable_extension "plpgsql"
 
   create_table "favorites", force: :cascade do |t|
-
     t.string "place_id"
     t.string "name"
     t.string "address"
     t.string "phone"
     t.float "lat"
     t.float "long"
-
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
