@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2018_10_22_175700) do
     t.string "address"
     t.float "lat"
     t.float "long"
-    t.string "type"
+    t.string "poi"
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
