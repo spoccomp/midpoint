@@ -5,7 +5,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%# <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAV0BbqjHJon1D5yf5O65xO2PkfvdCyZW8&libraries=places&callback=initMap" defer></script> %>
-    <%# <%= javascript_include_tag 'application','data-turbolinks-track': 'reload', defer: true %>  %>
+    <%# <%= javascript_include_tag 'application','data-turbolinks-track': 'reload', defer: true %> 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree:700|Roboto:500" rel="stylesheet">
@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <div class="container" id="container-size">
+    <%# <div class="container" id="container-size">
       <div class="row">
         <div class="col-md-12">
 
@@ -25,7 +25,7 @@
     
        </div>
       </div>
-    </div>
+    </div> %>
    <%= yield %>
     
   </body>
