@@ -24,7 +24,8 @@ class FavoritesController < ApplicationController
   end
 
   def destroy
-    @favorite.destroy
+    favorite = @favorite
+    favorite.destroy
   end
 
   private
