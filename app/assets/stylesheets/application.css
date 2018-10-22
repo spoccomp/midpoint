@@ -97,6 +97,7 @@ a {
   border-color: rgb(51, 50, 50);
   height: 2.2em;
   color: rgb(51, 50, 50);
+  margin-bottom: 1.5em;
 }
 
 .btns-cancel {
@@ -114,6 +115,7 @@ a {
 
 .btns:hover {
   background-color: rgb(248, 119, 7);
+  color: wheat;
 }
 
 .name {
@@ -128,6 +130,7 @@ a {
 .devise-head {
   color: rgb(51, 50, 50);
   text-align: center;
+  margin-top: 1em;
 }
 
 .devise-links:hover {
@@ -140,7 +143,7 @@ a {
 }
 
 form {
-  padding-top: 3em;
+  padding-top: 1em;
 }
 
 .locations {

@@ -1,16 +1,16 @@
-<h2 class="col-md-4 offset-md-3" >Forgot your password?</h2>
+<h2 class="devise-head">Forgot your password?</h2>
 
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%= f.label :email, class: "col-md-4 offset-md-3" %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "off", class: "col-md-4 offset-md-3 form-control" %>
+    <%= f.label :email, class: "offset-md-3" %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "off", class: "col-md-6 offset-md-3 form-control" %>
   </div> <br>
 
   <div class="actions">
-    <%= f.submit "Send me reset password instructions", class: "col-md-4 offset-md-3 form-control" %>
-  </div>
+    <%= f.submit "Send me reset password instructions", class: "col-md-6 offset-md-3 form-control" %>
+  </div> <br>
 <% end %>
 
 <%= render "devise/shared/links" %>

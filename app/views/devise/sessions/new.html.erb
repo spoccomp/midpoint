@@ -1,5 +1,5 @@
 <br>
-<h2 class="offset-md-5">Log in</h2><hr>
+<h2 class="devise-head">Log in</h2>
 
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name), class: "form-horizontal") do |f| %>
@@ -11,17 +11,17 @@
   <div class="row">
     <%= f.label :password, class: "offset-md-3 control-label" %><br />
     <%= f.password_field :password, autocomplete: "off", class: "col-md-6 offset-md-3 form-control" %>
-  </div>
+  </div><br>
 
   <% if devise_mapping.rememberable? -%>
-    <div class="field">
+    <div class="field row">
       <%= f.check_box :remember_me, class: "offset-md-3" %> <br>
-      <%= f.label :remember_me, class: "offset-md-3 control-label" %>
+      <%= f.label :remember_me, class: "control-label" %>
     </div>
   <% end %>
 
   <div class="actions">
-    <%= f.submit "Log in", class: "col-md-6 offset-md-3 control-label btns" %>
+    <%= f.submit "Log in", class: "col-md-4 offset-md-4 control-label btns" %>
   </div>
 <% end %>
 
