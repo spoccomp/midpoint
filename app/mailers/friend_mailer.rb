@@ -5,9 +5,10 @@ class FriendMailer < ApplicationMailer
   #
   #   en.friend_mailer.meet_up_mailer.subject
   #
-  def meet_up_mailer
-    @greeting = "Hi"
-
-    mail to: "to@example.org", subject: "meetup"
+  def meet_up_mailer()
+    # @body = data
+    
+  #   mail(to: email, subject: subject)
   end
 end
+ 
