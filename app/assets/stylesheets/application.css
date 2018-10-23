@@ -77,7 +77,7 @@ a {
 
 .nav-links {
   color: black;
-  font-size: 1.3em;
+  font-size: 0.9em;
   padding-left: 1em;
 }
 
@@ -149,4 +149,25 @@ form {
 
 .locations {
   padding-bottom: 3em;
+}
+
+.del-icon{
+  height: 2em;
+  color: #F38A2D;
+}
+.favorite-locations{
+  font-size: 0.7em;
+}
+
+.mode {
+  background-color: #F38A2D !important;
+  opacity: 0.8;
+}
+
+.btn-fave {
+  background-color: #F38A2D;
+  opacity: 0.9;
+  color: black;
+  height: 2em;
+  padding: 0 !important;
 }

@@ -1,6 +1,6 @@
 
  
- 
+ <%= render 'shared/nav' %> 
 
 <h1 class="devise-head">My Favorites</h1>
 
@@ -10,37 +10,36 @@
     <thead>
       <tr class="tb-header">
         <th>
-          #
+          Location:
         </th>
         <th>
-          Location
+          Address:
         </th>
         <th>
-          Address
+          Phone #:
         </th>
         <th>
-          Delete
         </th>
       </tr>
     <thead> 
 
     <% @favorites.each do |f| %>
-    <tr id="favorite " >
-      <td>
-         <%# <%= f.id %> %>
-      </td>
+    <tr class="favorite-locations">
       <td>
         <%= f.name %>
       </td>
       <td>
-        <%= f.address %>
+       <%= f.address %>
       </td>
-        <%= f.phone%>
       <td>
-        <%# <span><%= link_to '', favorite_path(id: f.id), method: :delete, class: 'glyphicon glyphicon-trash index-icons', data: { confirm: 'Are you sure?' } %></span> %>
+        <%= f.phone%>
+      </td>
+        
+      <td>
+        <span><%= link_to '', favorite_path(id: f.id), method: :delete, class: 'fas fa-trash-alt del-icon', data: { confirm: 'Are you sure?' } %>
       </td>
     </tr>
     <% end %>
-  <%# </table> %>
-<%# </div> %>
+  </table>
+</div>
 

@@ -1,5 +1,5 @@
   
-    <nav class="navbar navbar-expand-md nav-bar">
+    <nav class="navbar navbar-expand-md nav-bar shadow mb-2 rounded">
       <%= image_tag("logo-icon3.png", class: "photo") %>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon hamburger"></span>
@@ -11,6 +11,14 @@
 
         <li class="nav-item">
           <%= link_to 'Locations', locations_new_path, class: 'nav-links'  %>
+        </li>
+          <li class="nav-item">
+          <%= link_to 'Favorites', favorites_path, class: 'nav-links' %>
+        </li>
+        </li>
+          <li class="nav-item">
+          <%= link_to "Email", email_models_path, class: 'nav-links' %>
+          
         </li>
 
       </ul>

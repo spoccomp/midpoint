@@ -68,27 +68,33 @@
   <%# </form> %>
 <%# </div> %> 
 
-
-
+<div class="row">
   <input id="origin-input" class="controls" type="text" placeholder="Enter an origin location">
 
     <input id="destination-input" class="controls" type="text" placeholder="Enter a destination location">
-
-    <div id="mode-selector" class="controls">
+    <div id="mode-selector" class="controls mode">
 
         <input type="radio" name="type" id="changemode-walking" checked="checked">
 
         <label for="changemode-walking">Walking</label>
-
         <input type="radio" name="type" id="changemode-transit">
-
         <label for="changemode-transit">Transit</label>
-
         <input type="radio" name="type" id="changemode-driving">
-
         <label for="changemode-driving">Driving</label>
+      
+        <%= form_with model: @favorite do |f| %>
+          <% f.hidden_field :place_id, :value => "fu"%>
+          <%= f.hidden_field :name  %> 
+          <%= f.hidden_field :phone %>
+          <%= f.hidden_field :address %>
+          <%= f.hidden_field :lat %>
+          <%= f.hidden_field :long %>
+          <%= f.submit "Save Favorite", name: "type", class: "btn col-md-8 btn-fave" %>
+        <% end %>
+     </div>
+ </div>
 
-    </div>
+    
 
     <div id="map"></div>
 
@@ -98,6 +104,7 @@
         Place ID <span id="place-id"></span><br>
         <span id="place-address"></span>
     </div>
+
 
 <%# save to favorite %>
   <%= form_with model: @favorite do |f| %>
@@ -151,6 +158,7 @@ document.getElementById("myBtn").addEventListener("click", function(){
     // document.getElementById("modalLoginForm").style.display = "none";
 });
 </script>
+
 
 
 <script>
