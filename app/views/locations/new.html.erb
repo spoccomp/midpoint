@@ -99,6 +99,19 @@
         <span id="place-address"></span>
     </div>
 
+
+  <%= form_with model: @favorite do |f| %>
+    <% f.hidden_field :place_id, :value => "fu"%>
+    <%= f.hidden_field :name  %> 
+    <%= f.hidden_field :phone %>
+    <%= f.hidden_field :address %>
+    <%= f.hidden_field :lat %>
+    <%= f.hidden_field :long %>
+    <%= f.submit "Save Favorite" %>
+  <% end %>
+
+  
+
     <script>
     
         // This example requires the Places library. Include the libraries=places
@@ -217,9 +230,19 @@
                 place.formatted_address;          
             me.infowindow.open(me.map);
 
+
             nameF = place.name;
             addressF = place.formatted_address;
             phoneF = place.formatted_phone_number;
+
+        
+            // document.getElementById("favorite_place_id").value = fPlaceFid;
+            document.getElementById("favorite_name").value = nameF;
+            document.getElementById("favorite_address").value = addressF;
+            document.getElementById("favorite_phone").value = phoneF;
+            document.getElementById("favorite_lat").value = latF;
+            document.getElementById("favorite_long").value = lngF;
+
             
             console.log(`${nameF} ${addressF} ${phoneF}`);
           }
