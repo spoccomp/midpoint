@@ -1,6 +1,6 @@
 
  
- 
+ <%= render 'shared/nav' %> 
 
 <h1 class="devise-head">My Favorites</h1>
 
@@ -19,13 +19,12 @@
           Phone #:
         </th>
         <th>
-          Delete
         </th>
       </tr>
     <thead> 
 
     <% @favorites.each do |f| %>
-    <tr id="favorite " >
+    <tr class="favorite-locations">
       <td>
         <%= f.name %>
       </td>
@@ -37,12 +36,7 @@
       </td>
         
       <td>
-        <span><%= link_to '', favorite_path(id: f.id), method: :delete, class: 'fas fa-trash-alt', data: { confirm: 'Are you sure?' }%>
-        
-         <%# </span>
-        <%= form_for @favorite, :url => { :action => "destroy" } %>
-          <%# <%= f.hidden_field :post_id, :value => @favorite.id %> %>
-        <%# <% end %> %> %>
+        <span><%= link_to '', favorite_path(id: f.id), method: :delete, class: 'fas fa-trash-alt del-icon', data: { confirm: 'Are you sure?' } %>
       </td>
     </tr>
     <% end %>
