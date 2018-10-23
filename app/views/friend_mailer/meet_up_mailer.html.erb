@@ -3,18 +3,25 @@
 <p>
   <%= @greeting %>, find me in app/views/friend_mailer/meet_up_mailer.html.erb
 </p>
- <%= render 'shared/nav' %>
  
-<h3 class="text-center">Email</h3>
-
- <%= render 'shared/nav' %>
  
-<h3 class="text-center">Email</h3>
+<%# <h3 class="text-center">Email</h3> %>
 
-<%# @user is not being used at the moment %>
-<%= bootstrap_form_with(model: @user) do |f| %>
+ <%# <%= render 'shared/nav' %> %>
+ 
+<%# <h3 class="text-center">Email</h3> %>
+
+
+<%=form_with  do |f| %>
   <%= f.email_field :email %>
-  <%= f.hidden%>
+  
   <%= f.submit "Send", class: "col-md-6 offset-md-3" %>
-<% end %>
+ <% end %>
+
+<%# <%= form_tag({controller: "email_models", action: "create"}, method: "post") do%>
+<%# Email : <br><%= text_field_tag 'email', ''%>
+<%# subject: <br><%= text_field_tag 'subject', ''%>
+<%# Body:<%= text_area_tag 'body', ''%> 
+<%# <%= submit_tag "submit",:value => "submit"%> 
+<%# <%end%> 
 
