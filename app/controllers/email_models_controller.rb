@@ -7,10 +7,11 @@ class EmailModelsController < ApplicationController
     end
     def new 
     end
-    def create  
+    def create 
+        FriendMailer.meet_up_mailer().deliver
     end
     def update
-    end
+    end    
     def show
     end
     def delete
