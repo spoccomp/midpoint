@@ -10,13 +10,13 @@
     <thead>
       <tr class="tb-header">
         <th>
-          #
+          Location:
         </th>
         <th>
-          Location
+          Address:
         </th>
         <th>
-          Address
+          Phone #:
         </th>
         <th>
           Delete
@@ -27,20 +27,25 @@
     <% @favorites.each do |f| %>
     <tr id="favorite " >
       <td>
-         <%# <%= f.id %> %>
-      </td>
-      <td>
         <%= f.name %>
       </td>
       <td>
-        <%= f.address %>
+       <%= f.address %>
       </td>
-        <%= f.phone%>
       <td>
-        <%# <span><%= link_to '', favorite_path(id: f.id), method: :delete, class: 'glyphicon glyphicon-trash index-icons', data: { confirm: 'Are you sure?' } %></span> %>
+        <%= f.phone%>
+      </td>
+        
+      <td>
+        <span><%= link_to '', favorite_path(id: f.id), method: :delete, class: 'fas fa-trash-alt', data: { confirm: 'Are you sure?' }%>
+        
+         <%# </span>
+        <%= form_for @favorite, :url => { :action => "destroy" } %>
+          <%# <%= f.hidden_field :post_id, :value => @favorite.id %> %>
+        <%# <% end %> %> %>
       </td>
     </tr>
     <% end %>
-  <%# </table> %>
-<%# </div> %>
+  </table>
+</div>
 
