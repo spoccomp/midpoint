@@ -161,6 +161,13 @@ form {
 
 .mode {
   background-color: #F38A2D !important;
-  opacity: 0.7;
+  opacity: 0.8;
+}
 
+.btn-fave {
+  background-color: #F38A2D;
+  opacity: 0.9;
+  color: black;
+  height: 3em;
+  font-size: 1.2em;
 }
