@@ -74,18 +74,14 @@
 
     <input id="destination-input" class="controls" type="text" placeholder="Enter a destination location">
 
-    <div id="mode-selector" class="controls">
+    <div id="mode-selector" class="controls mode">
 
         <input type="radio" name="type" id="changemode-walking" checked="checked">
 
         <label for="changemode-walking">Walking</label>
-
         <input type="radio" name="type" id="changemode-transit">
-
         <label for="changemode-transit">Transit</label>
-
         <input type="radio" name="type" id="changemode-driving">
-
         <label for="changemode-driving">Driving</label>
 
     </div>
@@ -107,10 +103,10 @@
     <%= f.hidden_field :address %>
     <%= f.hidden_field :lat %>
     <%= f.hidden_field :long %>
-    <%= f.submit "Save Favorite" %>
+    <%= f.submit "Save Favorite", class: "btns" %>
   <% end %>
 
-    <%= link_to "Party", email_models_path %>
+    <%= link_to "Party", email_models_path, class: "btns" %>
 
   
 

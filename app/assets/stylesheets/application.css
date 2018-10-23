@@ -158,3 +158,9 @@ form {
 .favorite-locations{
   font-size: 0.7em;
 }
+
+.mode {
+  background-color: #F38A2D !important;
+  opacity: 0.7;
+
+}
