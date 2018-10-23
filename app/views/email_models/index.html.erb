@@ -3,7 +3,8 @@
 <h3 class="text-center">Email</h3>
 
 <%# @user is not being used at the moment %>
-<%= bootstrap_form_with(model: @user) do |f| %>
+<%= bootstrap_form_with(model: @email_models) do |f| %>
   <%= f.email_field :email %>
+  <%# <%= f.hidden%> %>
   <%= f.submit "Send", class: "col-md-6 offset-md-3" %>
 <% end %>
