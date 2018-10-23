@@ -9,16 +9,17 @@ class FavoritesController < ApplicationController
 
   def create
     favorite = Favorite.create(
-      name: params[:student][:name],
-      address: params[:student][:address],
-      lat: params[:student][:lat],
-      long: params[:student][:long],
-
-      type: params[:favorite][:type],
-      user_id: user.id
+      place_id: params[:favorite][:place_id],
+      name: params[:favorite][:name],
+      address: params[:favorite][:address],
+      phone: params[:favorite][:phone],
+      lat: params[:favorite][:lat],
+      long: params[:favorite][:long],
+      user_id: current_user.id
 
     )
 
+    render 'index'
   end
 
   def new

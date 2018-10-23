@@ -1,5 +1,7 @@
- <%= render 'shared/nav' %>
+
  
+ 
+
 <h1 class="devise-head">My Favorites</h1>
 
 <div class="container">
@@ -20,7 +22,7 @@
           Delete
         </th>
       </tr>
-    <thead>
+    <thead> %>
 
     <% @favorites.each do |f| %>
     <tr id="favorite <%= f.id %>" >
@@ -33,11 +35,12 @@
       <td>
         <%= f.address %>
       </td>
+        <%= f.phone%>
       <td>
-        <span><%= link_to '', favorite_path(id: f.id), method: :delete, class: 'glyphicon glyphicon-trash index-icons', data: { confirm: 'Are you sure?' } %></span>
+        <%# <span><%= link_to '', favorite_path(id: f.id), method: :delete, class: 'glyphicon glyphicon-trash index-icons', data: { confirm: 'Are you sure?' } %></span> %>
       </td>
     </tr>
     <% end %>
-  </table>
-</div>
+  <%# </table> %>
+<%# </div> %>
 

@@ -8,7 +8,6 @@ class CreateFavorites < ActiveRecord::Migration[5.2]
       t.string :phone
       t.float :lat
       t.float :long
-
       t.references :user
       t.timestamps
     end
